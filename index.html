@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleia</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="./res/logo aleia.png" width="158px" height="63px" alt="aleia" class="logo">
+        </div>
+        <nav id="my-nav">
+            <ul>
+                <li>
+                    <a href="#">
+                        About us
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Careers
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Functions
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <button class="contact_us">
+                        Contact us
+                    </button>
+                </li>
+                <li>
+                    <a href="#" id='language' onclick="setLanguage()">
+                        Fr
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" onclick="toggle()">
+            <img src="./res/Burger Menu.png" width='55px' height='56px' alt="burger-menu">
+        </div>
+    </header>
+    <main>
+        <section class="first-section">
+            <div class="first-section-content">
+                <h1 class="first-section-title">
+                    be careful to respect the design!
+                </h1>
+                <div class="first-section-description">
+                    <p>Technologies : HTML CSS JS</p>
+                    <p>Détail des specs front : Zeplin</p>
+                    <p>3 maquettes desktop, tablet et mobile, 2 breakpoints</p>
+                    <p>Desktop/ tablet : 1200px (Desktop) / 1199 tablet</p>
+                    <p>Tablet / Mobile : 600px (Tablet) / 599 (mobile)</p>
+                    <button class="first-section-btn">
+                        <span>
+                            Let's discover
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <img class="background-img" src="./res/fond 1.png" alt="">
+        </section>
+        <section class="second-section container-fluide">
+            <div class="card">
+                <h1 class="second-section-title">
+                    Good luck about this block. Don't forget to respect the different breakpoints
+                </h1>
+                <div class="second-section-description">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                    <button>
+                        hang in there
+                    </button>
+                </div>
+            </div>
+            <img src="./res/trait.png" alt="divider">
+        </section>
+        <section class="third-section container-fluide">
+            <h1 class="third-section-title">
+                Don't forget about the spacing! It's very important
+            </h1>
+            <div class="bt-row mv-row ">
+                <div class="bt-col-sm-12 bt-col-lg-12 bt-col-4 resp-card-position ">
+                    <div class="third-section-card">
+                        <img src="./res/icon 1.png" alt="danger">
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="bt-col-sm-12 bt-col-lg-12 bt-col-4 card2-position resp-card-position">
+                    <div class="third-section-card">
+                        <img src="./res/icon 2.png" alt="danger">
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                    </div>
+                </div>
+                <div class="bt-col-sm-12 bt-col-lg-12 bt-col-4 card3-position resp-card-position">
+                    <div class="third-section-card">
+                        <img src="./res/icon 3.png" alt="danger">
+                        <h3>Consulting</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                    </div>
+                </div>
+
+            </div>
+            <button>
+                It's almost done, don't give up
+            </button>
+        </section>
+    </main>
+
+    <footer class="footer-container ">
+        <div class="footer-content">
+            <div class="footer-logo-container">
+                <img src="./res/logo aleia.png" width="258px" height="103px" alt="aleia" class="logo">
+            </div>
+            <div class="newslater-container">
+                <label for="input-mail">
+                    Send your email to stay tuned
+                </label>
+                <div class="input-group ">
+                    <input id='email' placeholder="youremail@email.com" class="input-mail" name="input-mail"
+                        type="email">
+                    <span onclick="validEmail()" class="suffix ">
+                        xoxo
+                    </span>
+                </div>
+                <span id='error-msg'></span>
+            </div>
+            <div class="follow-us">
+                <h3>Follow us</h3>
+                <div class="follow-us-logo">
+                    <a target="_blank" href="https://fr-fr.facebook.com/">
+                        <img src="./res/facebook.png" alt="facebook">
+                    </a>
+                    <a target="_blank" href="https://fr.linkedin.com/">
+                        <img src="./res/linked in.png" alt="linked in">
+                    </a>
+                    <a target="_blank" href="https://twitter.com/">
+                        <img src="./res//twitter.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="all-rights">
+            © 2020. All rights reserved.
+        </div>
+    </footer>
+</body>
+<script src="./js/index.js "></script>
+
+</html>
