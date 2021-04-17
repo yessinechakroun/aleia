@@ -16,7 +16,6 @@ function toggle() {
 function validEmail() {
     if (email.value.trim() === '') {
         document.getElementById('error-msg').innerHTML = "Please enter your adress mail";
-        message.info('This is a normal message')
     }
     else if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)) {
         document.getElementById('error-msg').innerHTML = " You have entered an invalid email address!";
